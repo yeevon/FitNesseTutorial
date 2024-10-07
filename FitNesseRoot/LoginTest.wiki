@@ -1,0 +1,22 @@
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim}
+
+!path C:\Users\Jochi\source\FitNesseTutorial\target\classes
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\**.jar
+!path C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar
+
+!|Import|
+|FitnesseTutorial.Fitnesse|
+
+Successful Login
+!|LoginFixture|
+|Email             |Password       |Remember Me|Sign In                 |
+|delimajm@gmail.com|GreenLantern22!|TRUE       |Get a verification email|
+|delimajm@gmai@@   |password1      |FALSE      |Unable to sign in       |
+|delimajm@gmail.com|password1      |FALSE      |Unable to sign in       |
