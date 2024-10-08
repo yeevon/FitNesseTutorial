@@ -1,11 +1,9 @@
 package FitnesseTutorial.Fitnesse;
 
-import net.bytebuddy.implementation.bytecode.Throw;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.seleniumhq.jetty9.util.thread.TryExecutor;
 
 public class LoginFixture {
     private WebDriver driver;

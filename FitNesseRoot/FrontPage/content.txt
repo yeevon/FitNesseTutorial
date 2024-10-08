@@ -21,4 +21,4 @@ Password Recovery
 *!
     
     
-    !note Release ${FITNESSE_VERSION}
+!note Release ${FITNESSE_VERSION}

@@ -14,8 +14,8 @@
 !path C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar
 
 !5 Import Pacakges:
-!|Import|
-|FitnesseTutorial.Fitnesse|
+!	Import
+	FitnesseTutorial.Fitnesse
 
 
 !3 User Authentication Test Suite:
@@ -24,20 +24,20 @@
 2. Invalid email address
 3. Invalid password
 *!
-!|LoginFixture|
-|Email             |Password       |Remember Me|Sign In                 |
-|delimajm@gmail.com|GreenLantern22!|TRUE       |Get a verification email|
-|delimajm@gmai@@   |password1      |FALSE      |Unable to sign in       |
-|delimajm@gmail.com|password1      |FALSE      |Unable to sign in       |
+!	LoginFixture
+	Email             	Password       	Remember Me	Sign In                 
+	delimajm@gmail.com	GreenLantern22!	TRUE       	Get a verification email
+	delimajm@gmai@@   	password1      	FALSE      	Unable to sign in       
+	delimajm@gmail.com	password1      	FALSE      	Unable to sign in       
 
 
 
 !*> Register to the website
 There is a bug registration doesn't work
 *!
-!|LoginFixture|
-|Email               |Password       |Remember Me|Register                |
-|delimajm@hotmail.com|GreenLantern22!|TRUE       |Get a verification email|
+!	LoginFixture
+	Email               	Password       	Remember Me	Register                
+	delimajm@hotmail.com	GreenLantern22!	TRUE       	Get a verification email
 
 
 
@@ -46,8 +46,8 @@ There is a bug registration doesn't work
 2. Reset password w/ invalid email
 3. Reset password w/ unregistered email
 *!
-!|ForgotPasswordFixture|
-|Forgot Password    |Email               |Reset                   |
-|Reset your password|delimajm@gmail.com  |Get a verification email|
-|Reset your password|delimajm@gmai@@     |Unable to sign in       |
-|Reset your password|delimajm@hotmail.com|Unable to sign in       |
+!	ForgotPasswordFixture
+	Forgot Password    	Email               	Reset                   
+	Reset your password	delimajm@gmail.com  	Get a verification email
+	Reset your password	delimajm@gmai@@     	Unable to sign in       
+	Reset your password	delimajm@hotmail.com	Unable to sign in       

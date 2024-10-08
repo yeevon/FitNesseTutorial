@@ -160,3 +160,116 @@ To run test from fitnesse all you need to do is navigate to: [Login Test](localh
 ![img_4.png](img_4.png)
 
 ## Create and Link Fixture files
+
+### Create new Wiki page
+In order to create new pages in Fitnesse you just have to enter page name in pascal case in edit view:
+1. On Home Page click Edit
+![img_5.png](img_5.png)
+2. Enter name of the page you want to create like: RegisterUser
+3. Save your changes
+![img_6.png](img_6.png)
+4. Click on the question mark to create your page
+![img_7.png](img_7.png)
+
+### Setup Test Page
+
+1. Define Test Runner: At the top of the page under contents set test runner to slim
+```markdown
+!define TEST_SYSTEM {slim}
+```
+2. Reference jars needed to run your test, this will depend on how you have your test setup so you will need to identify all the jars needed to run your test. for this project you need:
+```markdown
+!path C:\Users\Jochi\source\FitNesseTutorial\target\classes
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar
+!path C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\**.jar
+!path C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar
+```
+**¡Note I did not use relative paths for this demo so make sure to update file locations before executing your tests!**
+3. Next you have to import your java package where your test files are located:
+```markdown
+!|Import|
+|FitnesseTutorial.Fitnesse|
+```
+4. Now you can create your test tables. Test tables have three parts
+   1. Test File Name = Class file Name  
+      ```markdown
+      !|LoginFixture|
+   2. Column Name = must start with key word like 'set' and the rest be in camel case i.e.(setEmail, setRememberMe) you can find more information about method names here: [Fixture Code](https://fitnesse.org/FitNesse/UserGuide/WritingAcceptanceTests/FixtureCode.html) 
+      ```markdown
+       |Email |Password |Remember Me |Sign In|
+   3. Test Data = Is data being passed to the method or data that would be compared to what the method returns depending on how your test is set up reference: [Writing Acceptance Test](https://fitnesse.org/FitNesse/UserGuide/WritingAcceptanceTests.html)
+      ```markdown
+      |delimajm@gmail.com |GreenLantern22! |TRUE  |Get a verification email|
+      |delimajm@gmai@@    |password1       |FALSE |Unable to sign in       |
+      |delimajm@gmail.com |password1       |FALSE |Unable to sign in       |
+      
+5. Once that is complete you should be ready for running your test. Save your changes and click Test.
+
+### Feature Files
+
+For this demo I just created simple java classes and used selenium to run tests. If you want to execute test using junit to help organize your test reference: [Fitnesse w/ JUnit](https://docs.getxray.app/display/XRAY/Testing+using+FitNesse+and+JUnit)
+
+Feature File Example: Forgot Password Tests
+```java
+package FitnesseTutorial.Fitnesse;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ForgotPasswordFixture {
+    private WebDriver driver;
+    private final DriverSetup ds;
+
+    public ForgotPasswordFixture() {
+        ds = new DriverSetup();
+    }
+
+    public void setForgotPassword(String s) throws Exception{
+        driver = ds.setup();
+        try {
+            WebElement _forgotPassword = driver.findElement(By.xpath("//*[@class='link js-forgot-password']"));
+            _forgotPassword.click();
+            ds.checkForText(driver, s);
+        } catch (Exception e) {
+            driver.quit();
+            throw new Exception(e);
+        }
+    }
+
+    public void setEmail(String email) throws Exception{
+        try {
+            Thread.sleep(4000);
+            WebElement _email = driver.findElement(By.name("identifier"));
+            _email.sendKeys(email);
+        }
+        catch (Exception e) {
+            driver.quit();
+            throw new Exception(e);
+        }
+    }
+
+    public void setReset(String s) throws Exception{
+        try {
+            WebElement _nextButton = driver.findElement(By.xpath("//*[@value='Next']"));
+            _nextButton.click();
+            ds.checkForText(driver, s);
+            ds.tearDown(driver);
+        }
+        catch (Exception e) {
+            driver.quit();
+            throw new Exception(e);
+        }
+    }
+}
+```
+
+## Best Practices
+1. FitNesse is organized for Data-Driven Testing so it is best to keep that in mind when creating feature files / test cases
+2. While test can be run from the server hosting FitNesse it is best for **Devs/QAs** to pull down test to their local instance of FitNesse to execute the tests.
+3. This version of FitNesse must be run with Java 11
+4. If you are going to run FitNesse test from hosted server I recommended setting up Docker for executing the tests: [Docker Setup](https://medium.com/@sharmila.may5/steps-to-run-selenium-tests-in-docker-7610281a5581) or use a cloud service like '[BorwserStack](https://www.browserstack.com/)' or '[SauceLabs](https://saucelabs.com/)'
