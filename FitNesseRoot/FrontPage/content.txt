@@ -10,7 +10,15 @@ To add your first "page", click the [[Edit][.FrontPage?edit]] button and add a [
 |[[Acceptance Tests][.FitNesse.SuiteAcceptanceTests]]                  |''FitNesse's suite of Acceptance Tests''   |
 |[[Release Notes][.FitNesse.ReleaseNotes]]                             |''Find out about FitNesse's new features'' |
 
-!note Release ${FITNESSE_VERSION}
 
-	* CalculatorTest
-    * LoginTest
+|'''Test Suits'''                                                                                            |
+|[[Calculator Test][CalculatorTest]]    |''Sample test created to verify linkage with fixtures''|
+|[[User Authentication Test][LoginTest]]|''Webdriver test validating Appain commmunity website''|
+!* User Authentication Test
+Log In
+Registration
+Password Recovery
+*!
+    
+    
+    !note Release ${FITNESSE_VERSION}
