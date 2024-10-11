@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20240707</FitNesseVersion>
+  <rootPath>LoginTest.AstorSanders</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>13</exceptions>
+    </counts>
+    <date>2024-10-11T09:06:25-05:00</date>
+    <runTimeInMillis>110</runTimeInMillis>
+    <content>&lt;br/&gt;&amp;lt;test page&amp;gt;&lt;br/&gt;&lt;br/&gt;&lt;h3 id="0"&gt;User Authentication Test Suite:&lt;/h3&gt;
+&lt;div class="collapsible closed"&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='#' class='expandall'&gt;Expand&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href='#' class='collapseall'&gt;Collapse&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+	&lt;p class="title"&gt;Login Tests&lt;/p&gt;
+	&lt;div&gt;1. Successful Login&lt;br/&gt;2. Invalid email address&lt;br/&gt;3. Invalid password&lt;br/&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;table&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td colspan="4"&gt;LoginFixture &lt;span class="error"&gt;Could not invoke constructor for LoginFixture[0]&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowTitle"&gt;
+		&lt;td&gt;Email&lt;/td&gt;
+		&lt;td&gt;Password&lt;/td&gt;
+		&lt;td&gt;Remember Me&lt;/td&gt;
+		&lt;td&gt;Sign In&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;delimajm@gmail.com &lt;span class="error"&gt;The instance decisionTable_0.setEmail. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;GreenLantern22! &lt;span class="error"&gt;The instance decisionTable_0.setPassword. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;TRUE &lt;span class="error"&gt;The instance decisionTable_0.setRememberMe. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Get a verification email &lt;span class="error"&gt;The instance decisionTable_0.setSignIn. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor0"&gt;
+		&lt;td&gt;delimajm@gmai@@ &lt;span class="error"&gt;The instance decisionTable_0.setEmail. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;password1 &lt;span class="error"&gt;The instance decisionTable_0.setPassword. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;FALSE &lt;span class="error"&gt;The instance decisionTable_0.setRememberMe. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Unable to sign in &lt;span class="error"&gt;The instance decisionTable_0.setSignIn. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr class="slimRowColor1"&gt;
+		&lt;td&gt;delimajm@gmail.com &lt;span class="error"&gt;The instance decisionTable_0.setEmail. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;password1 &lt;span class="error"&gt;The instance decisionTable_0.setPassword. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;FALSE &lt;span class="error"&gt;The instance decisionTable_0.setRememberMe. does not exist&lt;/span&gt;&lt;/td&gt;
+		&lt;td&gt;Unable to sign in &lt;span class="error"&gt;The instance decisionTable_0.setSignIn. does not exist&lt;/span&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</content>
+    <relativePageName>AstorSanders</relativePageName>
+    <instructions>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_0', instruction='make', instanceName='decisionTable_0', className='LoginFixture', args=[]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_0</instructionId>
+          <type>ConstructionExpectation</type>
+          <evaluationMessage>Could not invoke constructor for LoginFixture[0]</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_4', instruction='call', instanceName='decisionTable_0', methodName='setEmail', args=[delimajm@gmail.com]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_4</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setEmail. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_5', instruction='call', instanceName='decisionTable_0', methodName='setPassword', args=[GreenLantern22!]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_5</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setPassword. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_6', instruction='call', instanceName='decisionTable_0', methodName='setRememberMe', args=[TRUE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_6</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setRememberMe. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_7', instruction='call', instanceName='decisionTable_0', methodName='setSignIn', args=[Get a verification email]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_7</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setSignIn. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_10', instruction='call', instanceName='decisionTable_0', methodName='setEmail', args=[delimajm@gmai@@]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_10</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setEmail. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_11', instruction='call', instanceName='decisionTable_0', methodName='setPassword', args=[password1]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_11</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setPassword. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_12', instruction='call', instanceName='decisionTable_0', methodName='setRememberMe', args=[FALSE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_12</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setRememberMe. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_13', instruction='call', instanceName='decisionTable_0', methodName='setSignIn', args=[Unable to sign in]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_13</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setSignIn. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_16', instruction='call', instanceName='decisionTable_0', methodName='setEmail', args=[delimajm@gmail.com]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_16</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setEmail. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_17', instruction='call', instanceName='decisionTable_0', methodName='setPassword', args=[password1]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_17</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setPassword. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_18', instruction='call', instanceName='decisionTable_0', methodName='setRememberMe', args=[FALSE]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_18</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setRememberMe. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+      <instructionResult>
+        <instruction>{id='decisionTable_0_19', instruction='call', instanceName='decisionTable_0', methodName='setSignIn', args=[Unable to sign in]}</instruction>
+        <slimResult></slimResult>
+        <expectation>
+          <status>error</status>
+          <instructionId>decisionTable_0_19</instructionId>
+          <type>VoidReturnExpectation</type>
+          <evaluationMessage>The instance decisionTable_0.setSignIn. does not exist</evaluationMessage>
+        </expectation>
+      </instructionResult>
+    </instructions>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\Jochi\source\FitNesseTutorial\target\classes;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-2\selenium-chrome-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-2\selenium-edge-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-2\selenium-firefox-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-2\selenium-ie-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-2\selenium-java-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-2\selenium-safari-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-2\selenium-support-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Jochi\.m2\repository\org\fitnesse\fitnesse\20240707\fitnesse-20240707.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>530</totalRunTimeInMillis>
+</testResults>
+

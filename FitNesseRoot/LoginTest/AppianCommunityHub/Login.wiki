@@ -1,0 +1,20 @@
+---
+Test
+---
+<test page>
+!5 Import Pacakges:
+!|Import|
+|FitnesseTutorial.Fitnesse|
+
+
+!3 User Authentication Test Suite:
+!*> Login Tests
+1. Successful Login
+2. Invalid email address
+3. Invalid password
+*!
+!|LoginFixture|
+|Test URL|Email             |Password       |Remember Me|Sign In                 |
+|https://login.appian.com/app/appiancommunity_usappiancommunity_1/exkbj2dap0hJhrVS3697/sso/saml|delimajm@gmail.com|GreenLantern22!|TRUE       |Get a verification email|
+|https://login.appian.com/app/appiancommunity_usappiancommunity_1/exkbj2dap0hJhrVS3697/sso/saml|delimajm@gmai@@   |password1      |FALSE      |Unable to sign in       |
+|https://login.appian.com/app/appiancommunity_usappiancommunity_1/exkbj2dap0hJhrVS3697/sso/saml|delimajm@gmail.com|password1      |FALSE      |Unable to sign in       |

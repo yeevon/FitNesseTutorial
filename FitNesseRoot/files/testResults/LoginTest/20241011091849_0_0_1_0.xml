@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<testResults>
+  <FitNesseVersion>v20240707</FitNesseVersion>
+  <rootPath>LoginTest</rootPath>
+  <result>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <date>2024-10-11T09:18:49-05:00</date>
+    <runTimeInMillis>13</runTimeInMillis>
+    <content>&lt;br/&gt;&lt;div class="contents"&gt;
+	&lt;b&gt;Contents:&lt;/b&gt;
+	&lt;ul class="toc1"&gt;
+		&lt;li&gt;
+			&lt;a href="LoginTest.UserAuthentication" class="suite"&gt;User Authentication *&lt;/a&gt;
+			&lt;ul class="toc2"&gt;
+				&lt;li&gt;
+					&lt;a href="LoginTest.UserAuthentication.Login" class="test"&gt;Login +&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="LoginTest.UserAuthentication.PasswordReset" class="test"&gt;Password Reset +&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href="LoginTest.UserAuthentication.Registration" class="test"&gt;Registration +&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h5 id="0"&gt;Test Runner:&lt;/h5&gt;
+&lt;span class="meta"&gt;variable defined: TEST_SYSTEM=slim&lt;/span&gt;
+&lt;br/&gt;&lt;br/&gt;&lt;h5 id="1"&gt;References needed to execute tests:&lt;/h5&gt;
+&lt;span class="meta"&gt;classpath: C:\Users\Jochi\source\FitNesseTutorial\target\classes&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\**.jar&lt;/span&gt;&lt;br/&gt;&lt;span class="meta"&gt;classpath: C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar&lt;/span&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;h2 id="2"&gt;Validate User Log In, Registration and Password reset&lt;/h2&gt;
+</content>
+    <relativePageName>LoginTest</relativePageName>
+  </result>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>java -cp C:\Users\Jochi\source\FitNesseTutorial\target\classes;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\grid\4.0.0-alpha-2\grid-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.4.12.v20180830.1\jetty-repacked-9.4.12.v20180830.1.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.25.0\selenium-api-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-2\selenium-chrome-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.25.0\selenium-chrome-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.25.0\selenium-chromium-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v127\4.25.0\selenium-devtools-v127-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.25.0\selenium-devtools-v128-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.25.0\selenium-devtools-v129-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.25.0\selenium-devtools-v85-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-2\selenium-edge-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.25.0\selenium-edge-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-2\selenium-edgehtml-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-2\selenium-firefox-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.25.0\selenium-firefox-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.25.0\selenium-http-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-2\selenium-ie-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.25.0\selenium-ie-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-2\selenium-java-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.25.0\selenium-java-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.25.0\selenium-json-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.25.0\selenium-manager-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.25.0\selenium-os-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.25.0\selenium-remote-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-2\selenium-safari-driver-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.25.0\selenium-safari-driver-4.25.0.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-server\4.0.0-alpha-2\selenium-server-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-2\selenium-support-4.0.0-alpha-2.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0-sources.jar;C:\Users\Jochi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.25.0\selenium-support-4.25.0.jar;C:\Users\Jochi\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Jochi\.m2\repository\org\fitnesse\fitnesse\20240707\fitnesse-20240707.jar fitnesse.slim.SlimService 1</command>
+    <exitCode>0</exitCode>
+    <stdOut></stdOut>
+    <stdErr></stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>0</right>
+    <wrong>0</wrong>
+    <ignores>1</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>431</totalRunTimeInMillis>
+</testResults>
+

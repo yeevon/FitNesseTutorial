@@ -1,0 +1,8 @@
+---
+Suite
+---
+!1 Test suite ${PAGE_NAME}
+!contents -R2 -g -p -f -h
+
+
+!4 Can use this page to setup some smoke test

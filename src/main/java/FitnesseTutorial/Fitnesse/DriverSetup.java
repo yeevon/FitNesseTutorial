@@ -10,7 +10,6 @@ public class DriverSetup {
     public WebDriver setup() {
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        driver.get("https://login.appian.com/app/appiancommunity_usappiancommunity_1/exkbj2dap0hJhrVS3697/sso/saml");
         return  driver;
     }
     public void tearDown(@NotNull WebDriver driver) {

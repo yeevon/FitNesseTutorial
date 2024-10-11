@@ -1,0 +1,14 @@
+---
+Test
+---
+<test page>
+!5 Import Pacakges:
+!|Import|
+|FitnesseTutorial.Fitnesse|
+
+!*> Register to the website
+There is a bug registration doesn't work
+*!
+!|LoginFixture|
+|Test URL|Email               |Password       |Remember Me|Register                |
+|https://login.appian.com/app/appiancommunity_usappiancommunity_1/exkbj2dap0hJhrVS3697/sso/saml|delimajm@hotmail.com|GreenLantern22!|TRUE       |Get a verification email|

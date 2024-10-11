@@ -20,5 +20,4 @@ Registration
 Password Recovery
 *!
     
-    
 !note Release ${FITNESSE_VERSION}

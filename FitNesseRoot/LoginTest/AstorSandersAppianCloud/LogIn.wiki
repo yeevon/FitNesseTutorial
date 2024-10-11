@@ -1,0 +1,11 @@
+---
+Test
+---
+<test page>
+!5 Import Pacakges:
+!|Import|
+|FitnesseTutorial.Fitnesse|
+
+!|LoginFixture|
+|Test URL                                        |Email                  |Password       |Sign In             |
+|https://astorsanders-demo.appiancloud.com/suite/|JLima@Astor-Sanders.com|GreenLantern22!|No entries available|
