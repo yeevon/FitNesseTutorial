@@ -8,4 +8,4 @@ Test
 
 !|LoginFixture|
 |Test URL                                        |Email                  |Password       |Sign In             |
-|https://astorsanders-demo.appiancloud.com/suite/|JLima@Astor-Sanders.com|GreenLantern22!|No entries available|
+|https://astorsanders-demo.appiancloud.com/suite/|JLima@Astor-Sanders.com|GreenLantern22!|No entrs available|
